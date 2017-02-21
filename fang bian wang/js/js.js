@@ -65,18 +65,18 @@ function checkEmail(){
 //表单提交验证
 function checkForm(){
 	if(ok1&&ok2&ok3&&ok4&&ok5){
-		$.cookies("username","$('#tel').val()");//写cookies
+		//$.cookies("username","$('#tel').val()");//写cookies
 		check("tj").style.display="block";
-	    setTimeout("check('fom1').submit()",2000);
+	    setTimeout(check('fom1').submit(),2000);
 	}else{
 		alert("信息有误，请检查！");
 		return false;
 	}
 }
 //读取cookie
-$(function(){
-	$("#readcook").innerHTML="$.cookies('username')";
-})
+//$(function(){
+//	$("#readcook").innerHTML="$.cookies('username')";
+//})
 
 // 清除悬浮框
 	$(function(){
