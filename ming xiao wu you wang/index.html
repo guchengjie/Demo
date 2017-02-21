@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="applicable-device" content="mobile" />
+		<!-- 移动端 浏览器中页面将以原始大小显示，不允许缩放 -->
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+
+		<!-- iphone会把一串数字识别为电话号码，点击的时候会提示是否呼叫，屏蔽这功能则把telephone设置为no -->
+		<meta content="telephone=no" name="format-detection" />
+		<!-- iphone的私有标签，默认值为default（白色），可以定为black（黑色）和black-translucent（灰色半透明） -->
+		<meta content="black" name="apple-mobile-web-app-status-bar-style">
+		<!-- iphone设备的是有标签 允许全屏模式浏览，隐藏浏览器导航栏 -->
+
+		<meta content="yes" name="apple-mobile-web-app-capable" />
+		<!-- 全屏显示 -->
+		<meta content="yes" name="apple-touch-fullscreen" />
+		<!-- UC强制全屏 -->
+		<meta name="full-screen" content="yes">
+		<!-- QQ强制全屏 -->
+		<meta name="x5-fullscreen" content="true">
+		<!-- 屏蔽百度转码 -->
+		<meta http-equiv="Cache-Control" content="no-transform" />
+		<meta http-equiv="Cache-Control" content="no-siteapp" />
+		<title>名校无忧 营销手机端</title>
+
+		<link rel="stylesheet" type="text/css" href="icon-font/iconfont.css">
+		<link rel="stylesheet" type="text/css" href="css/common.css">
+		<link rel="stylesheet" type="text/css" href="css/swiper.min.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<!-- 监听rem js 优先加载 -->
+		<script type="text/javascript" src="js/common.js"></script>
+		<!-- 基于jquery库 优先加载 -->
+		<script type="text/javascript" src="js/jquery-1.9.0.js"></script>
+		<!-- 基于jquery库的js 次加载 -->
+		<script type="text/javascript" src="js/swiper.min.js"></script>
+		<!-- 外部引用 自定义js-->
+		<script type="text/javascript" src="js/js.js"></script>
+	</head>
+
+	<body>
+		<!--定义侧边栏-->
+		<section class="aside_right">
+			<ul>
+				<li>群体</li>
+				<li>国家</li>
+				<li>方案</li>
+				<li>服务</li>
+			</ul>
+		</section>
+
+		<section class="aside_left">
+			<header>
+				<!--header的头部-->
+				<section class="public-header">
+					<section class="public-header-con">
+						<section class="public-banner-left left">
+							<img src="images/logo.png" alt="" />
+						</section>
+						<section class="public-banner-right right">
+							<img src="images/ico_btn1.png" alt="" />
+							<img id="doclick" src="images/ico_btn2_hov.png" alt="" />
+						</section>
+					</section>
+				</section>
+
+				<section class="banner">
+					<section class="swiper-container">
+						<section class="swiper-wrapper">
+							<section class="swiper-slide">
+								<img src="images/banner.jpg" alt="" />
+							</section>
+							<section class="swiper-slide">
+								<img src="images/banner.jpg" alt="" />
+							</section>
+							<section class="swiper-slide">
+								<img src="images/banner.jpg" alt="" />
+							</section>
+						</section>
+						<!-- Add Pagination -->
+						<section class="swiper-pagination"></section>
+						<!-- Add Arrows -->
+						<!--<section class="swiper-button-next"></section>
+					<section class="swiper-button-prev"></section>-->
+					</section>
+				</section>
+				<!--<section>
+				<span></span>
+				<span></span>
+				<span></span>
+			</section>-->
+			</header>
+
+			<section class="content-body">
+				<nav>
+					<section><img src="images/ico_btn3.png" alt="" />
+						<h2>选国家</h2></section>
+					<section><img src="images/ico_btn4.png" alt="" />
+						<h2>挑大学</h2></section>
+					<section><img src="images/ico_btn5.png" alt="" />
+						<h2>找方案</h2></section>
+					<section><img src="images/ico_btn6.png" alt="" />
+						<h2>查问题</h2></section>
+					<section><img src="images/ico_btn7.png" alt="" />
+						<h2>测录取</h2></section>
+				</nav>
+				<article>
+					<!--头条栏-->
+					<!--实现跑马灯的效果-->
+					<section class="content-toutiao">
+						<img src="images/text_btn1.png" alt="" />
+						<ul class="content-tt">
+							<li>美国纽约大学金融数学 硕士专业1</li>
+							<li>德玛西亚之盖伦大宝剑 硕士专业2</li>
+							<li>诺克萨斯之诺克旋风斩 硕士专业3</li>
+							<li>艾欧尼亚之索拉卡毒奶 硕士专业4</li>
+							<li>战争学院之易大师剑圣 硕士专业5</li>
+							<li>祖安之机械先驱三只手 硕士专业6</li>
+							<li>约德尔人之吉格斯鬼才 硕士专业7</li>
+						</ul>
+					</section>
+					<section class="content-xuanzhe">
+						<section class="content-xuexiao">
+							<!--教育top栏-->
+							<section class="content-xiaoxue">
+								<section class="content-xiaoxue1 shadow">
+									<h2>我是高中生</h2>
+									<p>放眼全球看世界</p>
+									<p>成就更优秀的自己</p>
+								</section>
+								<section class="content-xiaoxue2 shadow">
+									<h2>我是高中生</h2>
+									<p>名校硕士留学</p>
+									<p>无缝对接世界名校</p>
+								</section>
+								<section class="content-xiaoxue3 shadow">
+									<h2>我是高中生</h2>
+									<p>无户籍限制</p>
+									<p>更好教育更高起点</p>
+								</section>
+							</section>
+						</section>
+						<section class="content-xuexiao">
+							<!--教育bottom栏-->
+							<section class="content-daxue">
+								<section class="content-daxue1 box-shadow">
+									<p>高考留学正当时</p>
+									<p>高考0压力 拒绝独木桥</p>
+								</section>
+								<section class="content-daxue2 box-shadow">
+									<p>中外名校双录取</p>
+									<p>取录先人一步 留学更有保障</p>
+								</section>
+							</section>
+						</section>
+					</section>
+					<!--page2的content-->
+					<section class="public-header-con2">
+						<section class="public-banner-left2 left">
+							<img src="images/icon1.png" alt="" />留学目的地
+						</section>
+						<section class="public-banner-right2 right">
+							<span>在线咨询</span><img src="images/ico_btn9.png" alt="" />
+						</section>
+					</section>
+					<section class="banner2">
+						<section class="swiper-container">
+							<section class="swiper-wrapper">
+								<section class="swiper-slide">
+									<ul class="guojia">
+										<li><img src="images/national-1.png" alt="" />
+											<h2>美国</h2></li>
+										<li><img src="images/national-2.png" alt="" />
+											<h2>英国</h2></li>
+										<li><img src="images/national-3.png" alt="" />
+											<h2>澳洲</h2></li>
+										<li><img src="images/national-4.png" alt="" />
+											<h2>加拿大</h2></li>
+									</ul>
+									<ul class="guojia">
+										<li><img src="images/national-5.png" alt="" />
+											<h2>韩国</h2></li>
+										<li><img src="images/national-6.png" alt="" />
+											<h2>德国</h2></li>
+										<li><img src="images/national-7.png" alt="" />
+											<h2>法国</h2></li>
+										<li><img src="images/national-8.png" alt="" />
+											<h2>西班牙</h2></li>
+									</ul>
+								</section>
+								<section class="swiper-slide">
+									<ul class="guojia">
+										<li><img src="images/national-1.png" alt="" />
+											<h2>美国</h2></li>
+										<li><img src="images/national-2.png" alt="" />
+											<h2>英国</h2></li>
+										<li><img src="images/national-3.png" alt="" />
+											<h2>澳洲</h2></li>
+										<li><img src="images/national-4.png" alt="" />
+											<h2>加拿大</h2></li>
+									</ul>
+									<ul class="guojia">
+										<li><img src="images/national-5.png" alt="" />
+											<h2>韩国</h2></li>
+										<li><img src="images/national-6.png" alt="" />
+											<h2>德国</h2></li>
+										<li><img src="images/national-7.png" alt="" />
+											<h2>法国</h2></li>
+										<li><img src="images/national-8.png" alt="" />
+											<h2>西班牙</h2></li>
+									</ul>
+								</section>
+								<!--<section class="swiper-slide">
+							</section>-->
+							</section>
+							<!-- Add Pagination -->
+							<section class="swiper-pagination"></section>
+							<!-- Add Arrows -->
+							<!--<section class="swiper-button-next"></section>
+					<section class="swiper-button-prev"></section>-->
+						</section>
+					</section>
+					<section class="public-header-con2">
+						<section class="public-banner-left2 left">
+							<img src="images/icon2.png" alt="" />热门留学院校
+						</section>
+						<section class="public-banner-right2 right">
+							<span>折校咨询</span><img src="images/ico_btn9.png" alt="" />
+						</section>
+					</section>
+					<section class="nav-diqu">
+						<ul>
+							<li>北京地区</li>
+							<li>华东地区</li>
+							<li>华南地区</li>
+							<li>西南地区</li>
+							<li>东北地区</li>
+						</ul>
+					</section>
+					<!--tab切换效果-->
+					<section class="to-liuxue">
+						<section class="liuxue">
+							<section class="liuxue-list">
+								<p><span class="red-icon">热</span><span>德玛西亚之盖伦大宝剑</><span class="green-icon mancolor">以满额</span></p>
+								<p>美国／德国／法国／英国／韩国／法拉利／兰博／盖伦</p>
+							</section>
+							<section class="liuxue-list">
+								<p><span class="red-icon jiancolor">荐</span><span>德玛西亚之盖伦大宝剑</><span class="green-icon">报名中</span></p>
+								<p>美国／德国／法国／英国／韩国／法拉利／兰博／盖伦</p>
+							</section>
+							<section class="liuxue-list">
+								<p><span class="red-icon">热</span><span>德玛西亚之盖伦大宝剑</><span class="green-icon mancolor">以满额</span></p>
+								<p>美国／德国／法国／英国／韩国／法拉利／兰博／盖伦</p>
+							</section>
+							<section class="liuxue-list">
+								<p><span class="red-icon jiancolor">荐</span><span>德玛西亚之盖伦大宝剑</><span class="green-icon mancolor">以满额</span></p>
+								<p>美国／德国／法国／英国／韩国／法拉利／兰博／盖伦</p>
+							</section>
+							<section class="liuxue-list">
+								<p><span class="red-icon">热</span><span>德玛西亚之盖伦大宝剑</><span class="green-icon">报名中</span></p>
+								<p>美国／德国／法国／英国／韩国／法拉利／兰博／盖伦</p>
+							</section>
+						</section>
+						<!--第二个-->
+						<section class="liuxue">
+							<section class="liuxue-list">
+								<p><span class="red-icon">热</span><span>诺克萨斯之诺克旋风斩</><span class="green-icon mancolor">以满额</span></p>
+								<p>美国／德国／法国／英国／韩国／法拉利／兰博／盖伦</p>
+							</section>
+							<section class="liuxue-list">
+								<p><span class="red-icon jiancolor">荐</span><span>诺克萨斯之诺克旋风斩</><span class="green-icon">报名中</span></p>
+								<p>美国／德国／法国／英国／韩国／法拉利／兰博／盖伦</p>
+							</section>
+							<section class="liuxue-list">
+								<p><span class="red-icon">热</span><span>诺克萨斯之诺克旋风斩</><span class="green-icon mancolor">以满额</span></p>
+								<p>美国／德国／法国／英国／韩国／法拉利／兰博／盖伦</p>
+							</section>
+							<section class="liuxue-list">
+								<p><span class="red-icon jiancolor">荐</span><span>诺克萨斯之诺克旋风斩</><span class="green-icon mancolor">以满额</span></p>
+								<p>美国／德国／法国／英国／韩国／法拉利／兰博／盖伦</p>
+							</section>
+							<section class="liuxue-list">
+								<p><span class="red-icon">热</span><span>诺克萨斯之诺克旋风斩</><span class="green-icon">报名中</span></p>
+								<p>美国／德国／法国／英国／韩国／法拉利／兰博／盖伦</p>
+							</section>
+						</section>
+						<!--第三个-->
+						<section class="liuxue">
+							<section class="liuxue-list">
+								<p><span class="red-icon">热</span><span>艾欧尼亚之索拉卡毒奶</><span class="green-icon mancolor">以满额</span></p>
+								<p>美国／德国／法国／英国／韩国／法拉利／兰博／盖伦</p>
+							</section>
+							<section class="liuxue-list">
+								<p><span class="red-icon jiancolor">荐</span><span>艾欧尼亚之索拉卡毒奶</><span class="green-icon">报名中</span></p>
+								<p>美国／德国／法国／英国／韩国／法拉利／兰博／盖伦</p>
+							</section>
+							<section class="liuxue-list">
+								<p><span class="red-icon">热</span><span>艾欧尼亚之索拉卡毒奶</><span class="green-icon mancolor">以满额</span></p>
+								<p>美国／德国／法国／英国／韩国／法拉利／兰博／盖伦</p>
+							</section>
+							<section class="liuxue-list">
+								<p><span class="red-icon jiancolor">荐</span><span>艾欧尼亚之索拉卡毒奶</><span class="green-icon mancolor">以满额</span></p>
+								<p>美国／德国／法国／英国／韩国／法拉利／兰博／盖伦</p>
+							</section>
+							<section class="liuxue-list">
+								<p><span class="red-icon">热</span><span>艾欧尼亚之索拉卡毒奶</><span class="green-icon">报名中</span></p>
+								<p>美国／德国／法国／英国／韩国／法拉利／兰博／盖伦</p>
+							</section>
+						</section>
+						<!--第四个-->
+						<section class="liuxue">
+							<section class="liuxue-list">
+								<p><span class="red-icon">热</span><span>战争学院之易大师剑圣</><span class="green-icon mancolor">以满额</span></p>
+								<p>美国／德国／法国／英国／韩国／法拉利／兰博／盖伦</p>
+							</section>
+							<section class="liuxue-list">
+								<p><span class="red-icon jiancolor">荐</span><span>战争学院之易大师剑圣</><span class="green-icon">报名中</span></p>
+								<p>美国／德国／法国／英国／韩国／法拉利／兰博／盖伦</p>
+							</section>
+							<section class="liuxue-list">
+								<p><span class="red-icon">热</span><span>战争学院之易大师剑圣</><span class="green-icon mancolor">以满额</span></p>
+								<p>美国／德国／法国／英国／韩国／法拉利／兰博／盖伦</p>
+							</section>
+							<section class="liuxue-list">
+								<p><span class="red-icon jiancolor">荐</span><span>战争学院之易大师剑圣</><span class="green-icon mancolor">以满额</span></p>
+								<p>美国／德国／法国／英国／韩国／法拉利／兰博／盖伦</p>
+							</section>
+							<section class="liuxue-list">
+								<p><span class="red-icon">热</span><span>战争学院之易大师剑圣</><span class="green-icon">报名中</span></p>
+								<p>美国／德国／法国／英国／韩国／法拉利／兰博／盖伦</p>
+							</section>
+						</section>
+						<!--第五个-->
+						<section class="liuxue">
+							<section class="liuxue-list">
+								<p><span class="red-icon">热</span><span>祖安之机械先驱三只手</><span class="green-icon mancolor">以满额</span></p>
+								<p>美国／德国／法国／英国／韩国／法拉利／兰博／盖伦</p>
+							</section>
+							<section class="liuxue-list">
+								<p><span class="red-icon jiancolor">荐</span><span>祖安之机械先驱三只手</><span class="green-icon">报名中</span></p>
+								<p>美国／德国／法国／英国／韩国／法拉利／兰博／盖伦</p>
+							</section>
+							<section class="liuxue-list">
+								<p><span class="red-icon">热</span><span>祖安之机械先驱三只手</><span class="green-icon mancolor">以满额</span></p>
+								<p>美国／德国／法国／英国／韩国／法拉利／兰博／盖伦</p>
+							</section>
+							<section class="liuxue-list">
+								<p><span class="red-icon jiancolor">荐</span><span>祖安之机械先驱三只手</><span class="green-icon mancolor">以满额</span></p>
+								<p>美国／德国／法国／英国／韩国／法拉利／兰博／盖伦</p>
+							</section>
+							<section class="liuxue-list">
+								<p><span class="red-icon">热</span><span>祖安之机械先驱三只手</><span class="green-icon">报名中</span></p>
+								<p>美国／德国／法国／英国／韩国／法拉利／兰博／盖伦</p>
+							</section>
+						</section>
+					</section>
+
+					<section class="content-jiazai">
+						<section class="content-jz"><span>点击加载更多</span></section>
+					</section>
+					<section class="content-xuanxiao">
+						<section class="xuanxiao1">
+							<img src="images/ico_btn11.png" alt="" />
+							<p>智能选校</p>
+							<p>打造最佳留学方案</p>
+						</section>
+						<section class="xuanxiao1">
+							<img src="images/ico_btn12.png" alt="" />
+							<p>竞争力测试</p>
+							<p>完美超越别人家孩子</p>
+						</section>
+					</section>
+					<section class="public-header-con2 header-con3">
+						<section class="public-banner-left2 left banner-left3">
+							<img src="images/icon3.png" alt="" />优选留学方案<img id="xiala" src="images/xiala_icon1.png" alt="" />
+						</section>
+					</section>
+					<!--优选留学方案下拉list-->
+					<section class="content-youxuan-list">
+						<section class="content-yx">
+							<p>
+								<img src="images/ico_btn14.png" alt="" />双录取留学方案
+								<img src="images/ico_btn14.png" alt="" />高中生优选留学方案
+							</p>
+						</section>
+						<section class="content-yx">
+							<p>
+								<img src="images/ico_btn14.png" alt="" />高考留学双保险
+								<img src="images/ico_btn14.png" alt="" />预科留学优势
+							</p>
+						</section>
+						<section class="content-yx">
+							<p>
+								<img src="images/ico_btn14.png" alt="" />艺术类名校留学
+								<img src="images/ico_btn14.png" alt="" />HND3+1 3+2
+							</p>
+						</section>
+						<section class="content-yx">
+							<p>
+								<img src="images/ico_btn14.png" alt="" />最省钱留学方案
+								<img src="images/ico_btn14.png" alt="" />2+2国际本科
+							</p>
+						</section>
+					</section>
+
+					<!--y优选留学方案-->
+					<section class="public-header-con2 header-con4">
+						<section class="public-banner-left2 left banner-con4">
+							<img src="images/icon4.png" alt="" />高考留学&高中生留学必看
+						</section>
+						<section class="public-banner-right2 right">
+							<span>专家咨询</span><img src="images/ico_btn9.png" alt="" />
+						</section>
+					</section>
+					<!--高考留学list-->
+					<section class="content-zhuanjia">
+						<section class="content-zhuanjia1">
+							<p><span class="red-icon jiancolor">荐</span>初名京师大学，是中国近代第一所国立大学</p>
+						</section>
+						<section class="content-zhuanjia1">
+							<p><span class="red-icon">热</span>初名京师大学，是中国近代第一所国立大学</p>
+						</section>
+						<section class="content-zhuanjia1">
+							<p><span class="red-icon">热</span>初名京师大学，是中国近代第一所国立大学</p>
+						</section>
+						<section class="content-zhuanjia1">
+							<p><span class="red-icon jiancolor">荐</span>初名京师大学，是中国近代第一所国立大学</p>
+						</section>
+						<section class="content-zhuanjia1">
+							<p><span class="red-icon jiancolor">荐</span>初名京师大学，是中国近代第一所国立大学</p>
+						</section>
+					</section>
+					<!--一对一制定留学方案-->
+					<section class="content-jiazai">
+						<section class="content-jz content-dz"><span>一对一在线定制留学方案</span></section>
+					</section>
+					<!--留校精彩专题-->
+					<section class="public-header-con2 header-con5">
+						<section class="public-banner-left2 left banner-con5">
+							<img src="images/icon5.png" alt="" />留校精彩专题
+						</section>
+						<section class="public-banner-right2 right">
+							<span>专家咨询</span><img src="images/ico_btn9.png" alt="" />
+						</section>
+					</section>
+					<!--留学精彩专题-->
+					<section class="content-zhuanti">
+						<section class="content-zt1">
+							<img src="images/index_img.jpg" alt="" /><span>高中生定制留学</span>
+							<img src="images/index_img1.jpg" alt="" /><span>双录取留学方案</span>
+							<img src="images/index_img4.jpg" alt="" /><span>艺术类留学名校</span>
+							<img src="images/index_img5.jpg" alt="" /><span>留学评估专家1对1</span>
+							<img src="images/index_img2.jpg" alt="" /><span>优势分析</span>
+							<img src="images/index_img3.jpg" alt="" /><span>最省钱方案</span>
+						</section>
+					</section>
+					<!--留学无忧-->
+					<section class="banner-wuyou">
+						留学无忧 人人都是名校生
+					</section>
+					<section class="content-wuyou">
+						<section class="content-wuyou1 icon18">
+							<p>10+</p>
+							<p>11届名校留学展</p>
+						</section>
+						<section class="content-wuyou1 icon19">
+							<p>158+</p>
+							<p>国内重点大学</p>
+						</section>
+					</section>
+					<section class="content-wuyou content-wy">
+						<section class="content-wuyou1 icon20">
+							<p>21566+</p>
+							<p>学院申请成功</p>
+						</section>
+						<section class="content-wuyou1 icon21">
+							<p>100％</p>
+							<p>成功留学保障</p>
+						</section>
+					</section>
+				</article>
+			</section>
+			<footer>
+				<section class="nav-footer">
+					<section><i class="iconfont">&#xe64d;</i>
+						<p>网站首页</p>
+					</section>
+					<section><i class="iconfont">&#xe677;</i>
+						<p>立即通话</p>
+					</section>
+					<section><i class="iconfont">&#xe63b;</i>
+						<p>在线咨询</p>
+					</section>
+					<section><i class="iconfont">&#xe87b;</i>
+						<p>录取测试</p>
+					</section>
+				</section>
+			</footer>
+			<!--页脚多选框和加速器-->
+			<!--页脚多选框-->
+			<!-- <section class="footer-bottom">
+				<img src="images/ico_btn22.png" alt="" />
+			</section>
+			<section class="footer-bottom-list">
+				<section><img src="images/ico-zw-1.png" alt="" /></section>
+				<section><img src="images/ico-zw-2.png" alt="" /></section>
+				<section><img src="images/ico-zw-3.png" alt="" /></section>
+				<section><img src="images/ico-zw-4.png" alt="" /></section>
+			</section> -->
+			<section class="zhiwen">
+				<ul class="zhiwenright">
+					<li class="zhiwenmenu"><img src="images/ico_btn22.png" alt="" class="zhiwenfirst"/></li>
+					<li class="zhiwen-pic-one"><img src="images/ico-zw-1.png" alt="" /></li>
+					<li class="zhiwen-pic-two"><img src="images/ico-zw-2.png" alt="" /></li>
+					<li class="zhiwen-pic-three"><img src="images/ico-zw-3.png" alt="" /></li>
+					<li class="zhiwen-pic-four"><img src="images/ico-zw-4.png" alt="" /></li>
+					<li class="zhiwen-pic-five"><img src="images/ico-zw-5.png" alt="" /></li>
+				</ul>
+			</section>
+			<section id="xf" class="footer-xuanfu">
+				<p>马上咨询名校专家</p>
+				<p><input type="tel" placeholder="请输入您的电话号码"/><span>免费回电</span></p>
+				<span class="delet"><img src="images/ico_btn25.png" alt=""></span>
+			</section>
+			<!--加速器-->
+			<section class="footer-top show-top">
+				<img src="images/gotop.png" alt="">
+			</section>
+		</section>
+	</body>
+
+</html>

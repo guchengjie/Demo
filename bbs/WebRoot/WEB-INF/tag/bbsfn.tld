@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<taglib xmlns="http://java.sun.com/xml/ns/j2ee"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-jsptaglibrary_2_0.xsd"
+  version="2.0">
+    
+  <description>ItanyBBS Functions</description>
+  <display-name>BBS functions</display-name>
+  <tlib-version>1.0</tlib-version>
+  <short-name>bf</short-name>
+  <uri>http://www.itany.com/bbs/functions</uri>
+
+  <function>
+    <name>getTopicCount</name>
+    <function-class>com.itany.bbs.functions.Functions</function-class>
+    <function-signature>int getTopicCount(java.lang.Integer)</function-signature>
+  </function>
+ 
+  <function>
+    <name>findLastTopicByBoard</name>
+    <function-class>com.itany.bbs.functions.Functions</function-class>
+    <function-signature>com.itany.bbs.entity.Topic findLastTopicByBoard(java.lang.Integer)</function-signature>
+  </function>
+  <function>
+    <name>findUser</name>
+    <function-class>com.itany.bbs.functions.Functions</function-class>
+    <function-signature>com.itany.bbs.entity.User findUser(java.lang.Integer)</function-signature>
+  </function>
+  
+   <function>
+    <name>getReplyCount</name>
+    <function-class>com.itany.bbs.functions.Functions</function-class>
+    <function-signature> java.lang.Integer getReplyCount(java.lang.Integer)</function-signature>
+  </function>
+  
+  
+ 
+
+  
+  
+    <function>
+    <name>findUserNameById</name>
+    <function-class>com.itany.bbs.functions.Functions</function-class>
+    <function-signature>com.itany.bbs.entity.User findUserNameById(int)</function-signature>
+  </function>
+  
+ 
+
+  
+ </taglib>

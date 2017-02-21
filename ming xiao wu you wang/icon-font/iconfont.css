@@ -1,0 +1,32 @@
+
+@font-face {font-family: "iconfont";
+  src: url('iconfont.eot?t=1480057008232'); /* IE9*/
+  src: url('iconfont.eot?t=1480057008232#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('iconfont.woff?t=1480057008232') format('woff'), /* chrome, firefox */
+  url('iconfont.ttf?t=1480057008232') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('iconfont.svg?t=1480057008232#iconfont') format('svg'); /* iOS 4.1- */
+}
+/*字体样式*/
+.iconfont {
+  font-family:"iconfont" !important;
+  font-size:0.55rem;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+  transition: font-size 0.25s ease-out 0s;
+}
+
+.nav-footer section .iconfont:hover{
+  font-size: 1rem;
+  color:#ff6561;
+}
+
+.icon-weixin:before { content: "\e63b"; }
+
+.icon-dianhua:before { content: "\e677"; }
+
+.icon-9yijianfankui:before { content: "\e87b"; }
+
+.icon-icon-home-default:before { content: "\e64d"; }
+

@@ -1,0 +1,5 @@
+transaction=com.itany.jdbc.transaction.impl.TransactionManagerImpl
+userinfodao=com.stusys.daoImpl.UserinfoDAOImpl
+userinfoservice=com.stusys.serviceImpl.UserinfoServicelmpl
+topicdao=com.bbs.daoImpl.TopicDAOImpl
+topicservice=com.bbs.serviceImpl.TopicServiceImpl

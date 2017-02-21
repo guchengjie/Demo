@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.2//EN" "http://struts.apache.org/dtds/struts-config_1_2.dtd">
+<struts-config>
+	
+	<form-beans>
+		<form-bean name="userinfo" type="com.stusys.form.UserinfoForm"></form-bean>
+	</form-beans>
+	
+	<!--  配置一个 action 通过这个配置  让框架知道  请求该去往哪儿 -->
+	<action-mappings>
+		<!-- path 请求的路径  type 让那个类来进行处理  parameter 用来配置一个处理请求的方法名字   -->
+		<action path="/login" type="com.stusys.action.UserinfoAction" parameter="login" name="userinfo">
+			<forward name="0" path="/main.jsp" redirect="true"></forward>
+		</action>
+		
+	</action-mappings>
+</struts-config>

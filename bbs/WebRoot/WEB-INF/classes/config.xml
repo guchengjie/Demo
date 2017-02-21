@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE action-mappings [
+	<!ELEMENT action-mappings (action*)>
+	<!ELEMENT action (forward*)>
+	<!ELEMENT forward EMPTY>
+	<!ATTLIST action path CDATA #REQUIRED>
+	<!ATTLIST action type CDATA #REQUIRED>
+	<!ATTLIST action parameter CDATA #REQUIRED>
+	<!ATTLIST forward name CDATA #REQUIRED>
+	<!ATTLIST forward path CDATA #REQUIRED>
+	<!ATTLIST forward redirect CDATA "false">
+]>
+<action-mappings>
+	<!-- 注册 -->
+	<action path="/regist" type="com.itany.bbs.action.UserAction" parameter="regist">
+		<forward name="success" path="/success.jsp" redirect="false"></forward>
+		<forward name="fail" path="/regist.jsp"></forward>
+	</action>
+	
+	<!-- 注册用户名验证 -->
+	<action path="/validUserName" type="com.itany.bbs.action.UserAction" parameter="validUserName">
+	</action>
+	<!-- 注册邮箱验证 -->
+	<action path="/validEmail" type="com.itany.bbs.action.UserAction" parameter="validEmail">
+	</action>
+	
+	<!-- 登录 -->
+	<action path="/login" type="com.itany.bbs.action.UserAction" parameter="login">
+		<forward name="success" path="/index.do" redirect="true"></forward>
+		<forward name="fail" path="/login.jsp"></forward>
+	</action>
+	<!-- 登录验证码验证 -->
+	<action path="/validname" type="com.itany.bbs.action.UserAction" parameter="validname">
+	</action>
+	
+	
+	
+	<!-- 退出注销 -->
+	<action path="/exit" type="com.itany.bbs.action.UserAction" parameter="exit">
+		<forward name="success" path="/index.do" redirect="true"></forward>
+		<forward name="fail" path="/findpwd.jsp"></forward>
+	</action>
+	
+	<action path="/email" type="com.itany.bbs.action.UserAction" parameter="email">
+		<forward name="success" path="/index.do" redirect="true"></forward>
+		<forward name="fail" path="/login.jsp"></forward>
+	</action>
+	
+	<!-- 首页获取板块信息 -->
+	<action path="/index" type="com.itany.bbs.action.BoardAction" parameter="findAllBoard">
+		<forward name="success" path="/index.jsp" redirect="true"></forward>
+	</action>
+	
+	<!-- 论坛主题帖相关信息 -->
+	<action path="/topic" type="com.itany.bbs.action.TopicAction" parameter="findAllTopic">
+		<forward name="success" path="/topic.jsp" redirect="false"></forward>
+		<forward name="login" path="/err.jsp"  redirect="false"></forward>
+		<forward name="fail" path="/login.jsp"></forward>
+	</action>
+	
+	<!-- 加精帖的信息呈现 -->
+	<action path="/addtop" type="com.itany.bbs.action.TopicAction" parameter="addtop">
+		<forward name="success" path="/top.jsp" redirect="false"></forward>
+	</action>
+	
+	<!-- 置顶帖的信息呈现 -->
+	<action path="/addgood" type="com.itany.bbs.action.TopicAction" parameter="addgood">
+		<forward name="success" path="/good.jsp" redirect="false"></forward>
+	</action>
+	
+	<!-- 论坛发帖相关信息 -->
+	<action path="/publish" type="com.itany.bbs.action.TopicAction" parameter="publish">
+		<forward name="success" path="/topic.do" redirect="false"></forward>
+		<forward name="err" path="/err.jsp"  redirect="false"></forward>
+		<forward name="fail" path="/publish.jsp"></forward>
+	</action>
+	
+	
+	<!-- 论坛回复相关信息 -->
+	<action path="/replay" type="com.itany.bbs.action.ReplyAction" parameter="findAllReplay">
+		<forward name="success" path="/replay.jsp" redirect="false"></forward>
+		<forward name="err" path="/err.jsp"  redirect="false"></forward>
+		<forward name="fail" path="/login.jsp"></forward>
+	</action>
+	
+	
+	<!-- 回复论坛发帖相关信息 -->
+	<action path="/remodify" type="com.itany.bbs.action.ReplyAction" parameter="remodify">
+		<forward name="success" path="/modify.jsp" redirect="false"></forward>
+		<forward name="err" path="/err.jsp"  redirect="false"></forward>
+		<forward name="fail" path="/login.jsp"></forward>
+	</action>
+	
+	
+	<!-- 论坛发布回复帖子信息 -->
+	<action path="/post" type="com.itany.bbs.action.ReplyAction" parameter="post">
+		<forward name="success" path="/replay.do" redirect="false"></forward>
+		<forward name="err" path="/err.jsp"  redirect="false"></forward>
+		<forward name="index" path="/index.jsp"></forward>
+		<forward name="fail" path="/login.jsp"></forward>
+	</action>
+	
+	<!-- 论坛删除回复帖子信息 -->
+	<action path="/delete" type="com.itany.bbs.action.ReplyAction" parameter="delete">
+		<forward name="success" path="/replay.do" redirect="false"></forward>
+		<forward name="err" path="/err.jsp"  redirect="false"></forward>
+		<forward name="index" path="/index.jsp"></forward>
+		<forward name="fail" path="/login.jsp"></forward>
+	</action>
+	
+	<!-- 论坛修改发布帖子信息 -->
+	<action path="/modify" type="com.itany.bbs.action.ReplyAction" parameter="modify">
+		<forward name="success" path="/replay.do" redirect="false"></forward>
+		<forward name="err" path="/err.jsp"  redirect="false"></forward>
+		<forward name="index" path="/index.jsp"></forward>
+		<forward name="fail" path="/login.jsp"></forward>
+	</action>
+	
+	
+	
+	
+</action-mappings>

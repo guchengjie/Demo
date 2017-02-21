@@ -1,0 +1,190 @@
+<!doctype html>
+<html >
+  <head>
+    <meta charset="utf-8"/>
+     <style type="text/css">
+     *{margin:0px;padding:0;}
+      body{
+        background:url("images/777.jpg");
+
+        background-size: cover;//能够使得图片按照比例缩小
+        overflow: hidden;
+      }
+
+
+      .zhuhai{
+        width:235px;
+        height:235px;
+        position:absolute;
+        bottom:180px;
+        right:0;
+        left:0;
+        margin:auto;
+        perspective:1000px;
+      }
+      .zhuhai .scene{
+        transform-style:preserve-3d;//应用了3d效果
+     
+        width:240px;
+        height:240px;
+        transform-origin:50%;
+        float:left; margin-right:60px;
+        
+        animation:slide 18s linear infinite;
+      }
+      .zhuhai .scene ul li{
+        list-style:none;
+        width:235px;
+        height:235px;
+        border:5px solid #534590;
+        position:absolute;
+        top: auto;
+        left: 80%;
+      }
+      .zhuhai .scene ul li img{
+        width:235px;
+        height:235px;
+      }
+      .zhuhai .scene ul li:nth-child(1){
+        transform: rotateY(0deg) translateZ(260px);
+      }
+      .zhuhai .scene ul li:nth-child(2){
+        transform:rotateY(60deg) translateZ(260px);
+      }
+      .zhuhai .scene ul li:nth-child(3){
+        transform:rotateY(120deg) translateZ(260px);
+      }
+      .zhuhai .scene ul li:nth-child(4){
+        transform:rotateY(180deg) translateZ(260px);
+      }
+        .zhuhai .scene ul li:nth-child(5){
+          transform:rotateY(240deg) translateZ(260px);
+        }
+      .zhuhai .scene ul li:nth-child(6){
+        transform:rotateY(300deg) translateZ(260px);
+      }
+      
+      @-webkit-keyframes  slide{
+        from{transform:rotateY(0deg);
+        }
+        to{transform:rotateY(360deg);
+        }
+      }
+        @keyframes  slide{
+        from{transform:rotateY(0deg);
+        }
+        to{transform:rotateY(360deg);
+        }
+      }
+      .zhuhai .scene:hover{
+       
+              animation-play-state:paused;
+            }
+             .zhuhai .scene li:hover img{
+              transform:scale(1.2);
+              border:5px solid rgba(255,255,255,0.5)
+            }
+             .xin{
+              position:fixed;
+              bottom:50px;
+              left:60px;
+              opacity:0;
+             
+              animation:xin 8s linear infinite;
+            }
+             @-webkit-keyframes xin{
+        0%{opacity:1;}
+                20%{bottom:300px; left:300px;opacity:0;}
+                40%{bottom:460px; left:680px;opacity:1;}
+                60%{bottom:300px; left:900px;opacity:0;}
+                80%{bottom:50px; left:1100px;opacity:1;}
+        100%{bottom:-150px; left:760px;opacity:0;}
+      } @keyframes xin{
+        0%{opacity:1;}
+                20%{bottom:300px; left:300px;opacity:0;}
+                40%{bottom:460px; left:680px;opacity:1;}
+                60%{bottom:300px; left:900px;opacity:0;}
+                80%{bottom:50px; left:1100px;opacity:1;}
+        100%{bottom:-150px; left:760px;opacity:0;}
+      }
+             audio{display:none;}
+     </style>
+   </head>
+ <body>
+    <div class="zhuhai">
+                  <audio src="like.mp3" autoplay>//
+                  </audio>
+
+            <div class="scene">
+              <ul>
+                <li><img src="images/111.jpg"/></li>
+                <li><img src="images/222.jpg"/></li>
+                <li><img src="images/333.jpg"/></li>
+                <li><img src="images/444.jpg"/></li>
+                 <li><img src="images/555.jpg"/></li>
+                <li><img src="images/666.jpg"/></li>
+              </ul>
+            </div>
+    </div>
+
+
+    <!--  <div class="xin">
+        <img src="images/xin.png"/>
+     </div> 
+     <div class="xin">
+        <img src="images/xin.png"/>
+     </div> 
+     <div class="xin">
+        <img src="images/xin.png"/>
+     </div> -->
+ </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

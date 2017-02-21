@@ -1,0 +1,8 @@
+userdao=com.itany.bbs.daoImpl.UserDaoImpl
+userservice=com.itany.bbs.serviceImpl.UserServiceImpl
+boarddao=com.itany.bbs.daoImpl.BoardDaoImpl
+boardservice=com.itany.bbs.serviceImpl.BoardServiceImpl
+topicdao=com.itany.bbs.daoImpl.TopicDaoImpl
+topicservice=com.itany.bbs.serviceImpl.TopicServiceImpl
+replaycdao=com.itany.bbs.daoImpl.ReplyDaoImpl
+replayservice=com.itany.bbs.serviceImpl.ReplyServiceImpl

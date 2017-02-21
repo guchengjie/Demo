@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>后台管理系统首页</title>
+<link rel="stylesheet" type="text/css" href="themes/metro/easyui.css">
+<link rel="stylesheet" type="text/css" href="themes/icon.css">
+<link rel="stylesheet" type="text/css" href="css/base.css">
+<script type="text/javascript" src="js/jquery-1.7.min.js"></script>
+<script type="text/javascript" src="js/jquery.easyui.min.js"></script>
+<script type="text/javascript" src="locale/easyui-lang-zh_CN.js"></script>
+<style type="text/css">
+body{
+	margin:0;
+	padding:0;
+}
+
+.body{
+	height:100%;
+	width:1024px;
+	margin:0 auto;
+	position:relative;
+}
+
+.title{
+	height:70px;
+	width:100%;
+	background-color:skyblue;
+	text-align:center;
+	line-height:70px;
+}
+
+.title span{
+	margin-left:40px;
+	font-size:40px;
+}
+.user{
+	position:absolute;
+	right:8px;
+	top:82px;
+	font-size:16px;
+}
+
+.laside{
+	height:500px;
+	width:200px;
+	float:left;
+	text-align:center;
+}
+
+.laside span{
+	width:100%;
+	height:50px;
+	font-size:24px;
+	line-height:50px;
+	letter-spacing:10px;
+}
+
+.laside ul{
+	list-style:none;
+	width:200px;
+	height:auto;
+	padding:0;
+	text-align:center;
+	font-size:18px;
+}
+
+.laside ul li{
+	width:200px;
+	height:40px;
+	line-height:40px;
+	border:1px dashed gray;
+}
+
+.laside ul a{
+	text-decoration:none;
+}
+
+.laside ul li:hover{
+	background-color:gray;
+}
+
+.raside{
+	height:500px;
+	width:824px;
+	float:left;
+}
+.panel-title {
+	font-size:20px;
+}
+.panel-body{
+	font-size:18px;
+}
+.panel-body div{
+	border:1px solid #ccc;
+	text-align:center;
+}
+.panel-body div:last-child{
+	margin-top:5px;
+}
+.footer{
+	position:absolute;
+	width:100%;
+	height:300px;
+	left:0px;
+	top:800px;
+	background-color:skyblue;
+}
+</style>
+<script type="text/javascript">
+$(function(){
+	$(".menulist div").bind("click",function(){
+		var path = $(this).attr("path");
+		$("#iframe").attr("src", path);
+	});
+});
+</script>
+</head>
+<body>
+	<div class="title"><span>BBS  论坛  后台管理系统</span></div>
+	<div class="body">
+		<div class="laside">
+		 	<span>系统功能</span>
+			<div class="nav-list" data-options="region:'west',split:true" title="West" style="width:200px;height:auto;">
+				<div class="easyui-accordion" data-options="fit:false,border:false">
+					<div class="menulist" title="论坛管理" style="padding:5px;">
+						<div path="findtopic.action">发帖信息</div>
+						<div path="huitie.jsp">回帖信息</div>
+					</div>
+					<div title="用户管理" data-options="selected:true" style="padding:5px;">
+						content2
+					</div>
+				</div>
+			</div>
+			
+		</div>
+		<div class="raside">
+			<iframe src="index.html" width="824" height="700" frameborder="0" id="iframe"></iframe>
+		</div>
+	
+	</div>
+	<div class="footer"></div>
+</body>
+</html>

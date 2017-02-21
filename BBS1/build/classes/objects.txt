@@ -1,0 +1,3 @@
+transaction=com.itany.jdbc.transaction.impl.TransactionManagerImpl
+topicdao=com.bbs.daoImpl.TopicDAOImpl
+topicservice=com.bbs.serviceImpl.TopicServiceImpl

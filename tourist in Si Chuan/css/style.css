@@ -1,0 +1,259 @@
+@charset="utf-8"
+.public-header{
+	position:relative;
+	width: 100%;
+	height: 993px;
+	max-width: 1920px;
+	overflow:hidden;
+}
+.public-header .public-nav{
+	position: absolute;
+	width: 100%;
+	max-width: 1920px;
+	height:84px;
+	margin: 0 auto;
+	top: 0;
+	left: 0;
+	z-index:999;
+	background:rgba(189,220,250,0.4);
+}
+.public-header .public-nav .w1200 .logo{
+    float:left;
+}
+.public-header .public-nav .w1200 .logo img{
+	margin-top:9px;
+	width: 65px;
+	height: 65px;
+	float:left;
+}
+.public-header .public-nav .w1200 .logo span{
+	display:block;
+	float:left;
+	font-size:18px;
+	margin-top:41px;
+	margin-left:8px;
+	font-weight:bold;
+	color: white;
+}
+.public-header .public-nav .w1200 .nav-li{
+	position:absolute;
+	right:0;
+	top:0;
+	width:830px;
+	height:84px;
+}
+.public-header .public-nav .w1200 .nav-li>ul{
+	float:right;
+	width:830px;
+	height:64px;
+	margin-top:20px;
+	text-align:center;
+}
+.public-header .public-nav .w1200 .nav-li ul li .down{
+	margin-bottom:22px;
+	margin-left:7px;
+}
+.public-header .public-nav .w1200 .nav-li ul li{
+	float:right;
+	width: 141px;
+	height:64px;
+	font-size:18px;
+	line-height:64px;
+	color:black;
+}
+.public-header .public-nav .w1200 .nav-li ul li .selectlist{
+	width:141px;
+	height:136px;
+	display:none;
+	background:#30b6e9;
+}
+.public-header .public-nav .w1200 .nav-li ul li .selectlist li{
+	width:141px;
+	height:34px;
+	line-height:34px;
+	text-align:center;
+}
+.public-header .public-nav .w1200 .nav-li ul>li:hover .selectlist{
+	display:block;
+}
+.selectlist>li:hover{
+	background:#1c6a87;
+}
+.public-header .public-banner img{
+	height: 993px;
+	/* max-width:1920px; */
+	/* background-position:fixed; */
+	width:100%;
+	/* margin: 0 auto;
+	display:inline-block;
+	overflow:hidden; */
+}
+.index-content .w1200 .destiation{
+	height:128px;
+	width: 100%;
+	text-align:center;
+
+}
+/* index  content的内容 */
+.index-content .w1200{
+	margin-top:43px;
+}
+.index-content .w1200 .destiation{
+	height: 85px;
+}
+.index-content .w1200 .destiation .des1{
+	display:block;
+	height:36px;
+	line-height:46px;
+	font-size:36px;
+	font-weight:bold;
+}
+.index-content .w1200 .destiation .des2{
+	display:block;
+	margin-top: 5px;
+	height:24px;
+	line-height:34px;
+	font-size:24px;
+}
+.index-content .w1200 .desbox{
+	position:relative;
+}
+.index-content .w1200 .desbox .view1 img{
+	width:693px;
+	height: 363px;
+	border:3px solid white;
+	box-shadow:1px 1px 8px black;
+}
+/* map的定位和css3效果 */
+.index-content .w1200 .desbox .map{
+	position:absolute;
+	left:723px;
+	top:36px;
+	width:475px;
+	height: 446px;
+	transition:box-shadow 3s;
+}
+.index-content .w1200 .desbox .map:hover{
+	box-shadow:0 0 15px blue;
+}
+.index-content .w1200 .desbox .view2 img{
+	width:695px;
+	height: 348px;
+	margin-top:35px;
+	border-top:21px solid #fff;
+}
+.index-content .w1200 .desbox .viewcontent{
+	position:absolute;
+	top:522px;
+	left:723px;
+	text-align:center;
+	width: 478px;
+	height: 256px;
+	background-color:#30b6e9;
+}
+.index-content .w1200 .desbox .viewcontent p{
+	font-size:43px;
+	color:white;
+	margin-top:100px;
+	letter-spacing:7px;
+	line-height:90px;
+}
+.index-content .w1200 .desbox .viewcontent span{
+	width:20px;
+	height:20px;
+}
+.index-content .w1200 .desbox .viewcontent span img{
+	width:20px;
+	height:20px;
+	margin-right:18px;
+}
+.index-content .w1200 .desbox1{
+	margin-top:40px;
+	width:100%;
+	text-align:center;
+}
+.index-content .w1200 .destiation1 .des3{
+	display:block;
+	height:36px;
+	line-height:36px;
+	font-size:36px;
+	font-weight:bold;
+}
+.index-content .w1200 .dexbox1 .destiation1 .des4{
+	display:block;
+	margin-top:8px;
+	height:24px;
+	line-height:24px;
+	font-size:24px;
+}
+.styleshadow div{
+	transition:transform 1s linear;
+}
+.styleshadow div:hover{
+	transform:rotate(180deg);
+}
+.stylerotate div{
+	transition:transform 1s;
+}
+.stylerotate div:hover{
+	transform:rotateY(180deg);
+}
+.index-content .w1200 .dexbox1 .destiation1{
+	margin-top:31px;
+}
+ .viewall{
+	display:flex;
+	margin-top:31px;
+	justify-content:space-around;
+}
+.boxcontent{
+	background:#30b6e9;
+	width: 650px;
+	height: 258px;
+	position:absolute;
+	right:5px;
+	bottom:700px;
+	padding:50px;
+}
+.boxcontent p{
+	font-size:24px;
+	color:white;
+	text-align:left;
+}
+.boxcontent .wordclass{
+	text-indent:48px;
+	line-height:48px;
+}
+.desbox3{
+	padding-top:100px;
+	margin-bottom:130px;
+}
+/* footer */
+.footer{
+	max-width:1920px;
+	width:100%;
+	height:130px;
+	margin: 0 auto;
+	display:inline-block;
+	overflow:hidden;
+}
+.public-footer img{
+	width:100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
